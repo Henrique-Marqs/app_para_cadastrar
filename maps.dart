@@ -9,10 +9,10 @@ main() {
   while (condicao) {
     print("=== DIGITE UM COMANDO ===");
     String? comando = stdin.readLineSync();
-    if (comando == "sair") {
+    if (comando == "finalizar") {
       print("=== PROGRAMA FINALIZADO ===");
       condicao = false;
-    } else if (comando == "cadastro") {
+    } else if (comando == "cadastrar") {
       print("\x1B[2J\x1B[0;0H");
       cadastrar();
     } else if (comando == "imprimir") {
